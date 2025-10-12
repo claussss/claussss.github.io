@@ -115,6 +115,15 @@ permalink: /
   .institution-details {
     flex: 1;
   }
+  .education-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    background: #f9fafb;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+  }
 </style>
 
 <header class="header">
@@ -186,8 +195,7 @@ permalink: /
   <h2 class="section-title">Research Experience</h2>
 
   <div class="employment-grid">
-
-    <div class="employment-item">
+    <div class="education-item">
       <img src="images/logo_sonyai.png" alt="Sony AI Logo" class="institution-logo">
       <div class="institution-details">
         <h3>Sony AI</h3>
@@ -196,8 +204,7 @@ permalink: /
         <div class="date">Summer 2024</div>
       </div>
     </div>
-
-    <div class="employment-item">
+    <div class="education-item">
       <img src="images/logo_ml4sci.png" alt="ML4SCI Logo" class="institution-logo">
       <div class="institution-details">
         <h3>Machine Learning for Science (ML4SCI)</h3>
@@ -206,7 +213,6 @@ permalink: /
         <div class="date">Summer 2021, Summer 2022</div>
       </div>
     </div>
-
   </div>
 </section>
 
