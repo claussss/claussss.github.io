@@ -111,58 +111,88 @@ permalink: /
 </section>
 
 <section class="section">
-  <h2 class="section-title">Selected Publications</h2>
-  <!-- Example publication card, add more as needed -->
+  <h2 class="section-title">Publications</h2>
+
+  <!-- FAC-FACodec -->
   <div class="publication-card">
     <div class="publication-content">
-      <h3>Title of Your Paper</h3>
-      <p class="publication-authors"><strong class="author-me">Yurii Halychanskyi</strong>, Coauthor 1, Coauthor 2.</p>
-      <p class="publication-venue">Conference/Journal, Year.</p>
+      <h3>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</h3>
+      <p class="publication-authors"><strong class="author-me">Yurii Halychanskyi</strong>, Cameron Churchwell, Yutong Wen, Volodymyr Kindratenko.</p>
+      <p class="publication-venue">Preprint.</p>
       <div class="publication-links">
         <a href="#">[Abstract]</a>
         <a href="#">[Paper]</a>
       </div>
     </div>
   </div>
+
+  <!-- Latent Diffusion Bridges for Unsupervised Musical Audio Timbre Transfer -->
+  <div class="publication-card">
+    <div class="publication-content">
+      <h3>Latent Diffusion Bridges for Unsupervised Musical Audio Timbre Transfer</h3>
+      <p class="publication-authors"><strong class="author-me">Yurii Halychanskyi</strong>, et&nbsp;al.</p>
+      <p class="publication-venue">arXiv, 2024.</p>
+      <div class="publication-links">
+        <a href="https://arxiv.org/abs/2409.06096" target="_blank" rel="noopener">[Paper]</a>
+        <a href="#">[Abstract]</a>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <section class="section">
   <h2 class="section-title">Research Experience</h2>
+
   <div class="employment-grid">
+
     <div class="employment-item">
-      <img src="images/logo_uiuc.jpg" alt="UIUC Logo" class="institution-logo">
+      <img src="images/logo_sonyai.png" alt="Sony AI Logo" class="institution-logo">
       <div class="institution-details">
-        <h3>University of Illinois Urbana-Champaign</h3>
-        <div class="location">Urbana, IL</div>
-        <div class="degree">PhD Student</div>
-        <div class="date">2022 - Present</div>
+        <h3>Sony AI</h3>
+        <div class="location">Tokyo, Japan</div>
+        <div class="degree">Research Scientist (Intern)</div>
+        <div class="date">Summer 2024</div>
       </div>
     </div>
-    <!-- Add more employment items as needed -->
+
+    <div class="employment-item">
+      <img src="images/logo_ml4sci.png" alt="ML4SCI Logo" class="institution-logo">
+      <div class="institution-details">
+        <h3>Machine Learning for Science (ML4SCI)</h3>
+        <div class="location">Remote</div>
+        <div class="degree">Research Intern (Google Summer of Code)</div>
+        <div class="date">Summer 2021, Summer 2022</div>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <section class="section">
   <h2 class="section-title">Education</h2>
   <div class="education-grid">
+
     <div class="education-item">
       <img src="images/logo_uiuc.jpg" alt="UIUC Logo" class="institution-logo">
       <div class="institution-details">
-        <h3>University of Illinois Urbana-Champaign</h3>
+        <h3>University of Illinois Urbana‑Champaign</h3>
         <div class="location">Urbana, IL</div>
         <div class="degree">PhD in Computer Science</div>
-        <div class="date">2022 - Present</div>
+        <div class="date">Aug 2023 – May 2028 (expected)</div>
       </div>
     </div>
+
     <div class="education-item">
-      <img src="images/logo_ntua.png" alt="NTUA Logo" class="institution-logo">
+      <img src="images/logo_uw.png" alt="University of Washington Logo" class="institution-logo">
       <div class="institution-details">
-        <h3>National Technical University of Athens</h3>
-        <div class="location">Athens, Greece</div>
-        <div class="degree">Diploma in Electrical and Computer Engineering</div>
-        <div class="date">2016 - 2022</div>
+        <h3>University of Washington</h3>
+        <div class="location">Seattle, WA</div>
+        <div class="degree">B.S. in Computer Science</div>
+        <div class="date">2021 – 2023</div>
       </div>
     </div>
+
   </div>
 </section>
 
