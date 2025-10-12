@@ -86,14 +86,13 @@ permalink: /
     vertical-align: super;
   }
   .institution-logo {
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     object-fit: contain;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     margin-right: 1.2rem;
     margin-bottom: 0;
-    background: #fff;
+    background: none;
     flex-shrink: 0;
     display: block;
   }
@@ -101,10 +100,11 @@ permalink: /
     display: flex;
     align-items: center;
     gap: 1.2rem;
-    padding: 1.1rem 0;
-    background: #f9fafb;
-    border-radius: 8px;
-    margin-bottom: 1.1rem;
+    padding: 0.5rem 0 0.5rem 0;
+    background: none;
+    border-radius: 0;
+    margin-bottom: 0.5rem;
+    box-shadow: none;
   }
   .institution-details {
     flex: 1;
@@ -169,7 +169,7 @@ permalink: /
     <div class="publication-content">
       <h3>Latent diffusion bridges for unsupervised musical audio timbre transfer</h3>
       <p class="publication-authors">
-        Michele Mancusi<span class="equal-contrib" title="Equal contribution">*</span>, <strong class="author-me">Yurii Halychanskyi</strong><span class="equal-contrib" title="Equal contribution">*</span>, Kin Wai Cheuk, Eloi Moliner, Chieh-Hsin Lai, Stefan Uhlich, Junghyun Koo, Marco A Martínez-Ramírez, Wei-Hsiang Liao, Giorgio Fabbro, Yuki Mitsufuji
+        Michele Mancusi<span class="equal-contrib" title="Equal contribution">*</span>, <strong class="author-me">Yurii Halychanskyi</strong><span class="equal-contrib" title="Equal contribution">*</span>, Kin Wai Cheuk, Eloi Moliner, Chieh-Hsin Lai, Stefan Uhlich, Junghyun Koo, Marco A Martínez-Ramírez, Wei-Hsiang Liao, Giorgio Fabbro, Yuki Mitsufuji.
       </p>
       <p class="equal-contrib-note"><span class="equal-contrib">*</span> Equal contribution</p>
       <p class="publication-venue">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2025.</p>
