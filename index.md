@@ -57,8 +57,8 @@ permalink: /
       padding: 1.2rem;
     }
     .profile-img {
-      width: 140px;
-      height: 140px;
+      width: 120px;
+      height: 120px;
     }
   }
 </style>
