@@ -104,15 +104,17 @@ permalink: /
 <section class="section">
   <h2 class="section-title">About Me</h2>
   <div class="about-item">
-    <span class="about-emoji" aria-hidden="true">🎓</span>
+    <span class="about-emoji" aria-hidden="true">🎙️</span>
     <p>
-      I am a PhD student at the <strong>University of Illinois Urbana-Champaign (UIUC)</strong>, working on speech, accent conversion, and generative audio.
+      I am a PhD student at the <strong>University of Illinois Urbana‑Champaign (UIUC)</strong>, advised by <a href="https://siebelschool.illinois.edu/about/people/faculty/kindrtnk" target="_blank">Volodymyr Kindratenko</a>.
+      My research focuses on <strong>generative audio modeling</strong> for <strong>cross‑domain conversion</strong>, including tasks such as <em>timbre</em> and <em>accent transfer</em> in <em>low‑resource</em> or <em>unsupervised</em> settings.
     </p>
   </div>
   <div class="about-item">
-    <span class="about-emoji" aria-hidden="true">📚</span>
+    <span class="about-emoji" aria-hidden="true">🧠</span>
     <p>
-      My research focuses on generative models for audio, speech processing, and accent conversion.
+      I study how to adapt generative models for speech and accent conversion under <em>low‑resource</em> conditions — treating accent conversion as a special case of cross‑domain generation.
+      This includes developing <strong>unsupervised grapheme‑to‑phoneme (G2P)</strong> systems and scalable latent diffusion frameworks for controllable speech generation.
     </p>
   </div>
 </section>
