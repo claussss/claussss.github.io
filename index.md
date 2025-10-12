@@ -9,20 +9,20 @@ permalink: /
   <div class="header-content">
     <h1>Yurii Halychanskyi</h1>
     <div class="social-links">
-      <a target="_blank" href="https://scholar.google.com/citations?user=YOUR_ID" title="Google Scholar">
+      <a target="_blank" href="https://scholar.google.com/citations?user=Rcx5Jn8AAAAJ&hl=en" title="Google Scholar">
         <img src="images/Google_Scholar_logo.svg" width="28" height="28" alt="Google Scholar">
       </a>
       <a target="_blank" href="https://github.com/Claussss" title="Github">
-        <img src="images/github-mark.svg" width="28" height="28" alt="GitHub">
+        <img src="images/Octicons-mark-github.svg" width="28" height="28" alt="GitHub">
       </a>
-      <a target="_blank" href="https://www.linkedin.com/in/YOUR_LINKEDIN/" title="LinkedIn">
+      <a target="_blank" href="https://www.linkedin.com/in/yurii-halychanskyi-a57590169/" title="LinkedIn">
         <img src="images/LinkedIn_icon.svg" width="28" height="28" alt="LinkedIn">
       </a>
-      <a target="_blank" href="https://x.com/YOUR_TWITTER" title="Twitter">
+      <a target="_blank" href="https://x.com/Yurii46278911?t=hmwTabK4xqQGbvtJNva-bg&s=09" title="Twitter">
         <img src="images/X_logo_2023_original.svg" width="28" height="28" alt="Twitter">
       </a>
     </div>
-    <p class="email">yhalyc [AT] illinois [DOT] edu</p>
+    <p class="email">yuriih2 [AT] illinois [DOT] edu</p>
   </div>
 </header>
 
