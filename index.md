@@ -16,9 +16,10 @@ permalink: /
     align-items: center;
   }
   .profile-img {
-    width: 200px; /* Change this value to adjust profile pic size */
-    height: 200px; /* Change this value to adjust profile pic size */
-    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    object-fit: contain; /* Show the whole image without cropping */
+    background: #f3f4f6; /* Optional: add a subtle background */
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 0;
