@@ -4,6 +4,65 @@ title: "Yurii Halychanskyi"
 permalink: /
 ---
 
+<style>
+  .header {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    align-items: center;
+  }
+  .profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
+  }
+  .header-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(to right, #2563eb, #4f46e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .social-links {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+  }
+  .social-links a {
+    color: #666;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.2s;
+  }
+  .social-links a:hover {
+    color: #2563eb;
+  }
+  .email {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+  }
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      padding: 1.2rem;
+    }
+    .profile-img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+</style>
+
 <header class="header">
   <img src="images/profile.jpg" alt="Profile" class="profile-img">
   <div class="header-content">
