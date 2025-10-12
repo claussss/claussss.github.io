@@ -85,45 +85,6 @@ permalink: /
     margin-right: 6px;
     vertical-align: super;
   }
-  .institution-logo {
-    width: 64px;
-    height: 64px;
-    object-fit: contain;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    margin-right: 1.2rem;
-    margin-bottom: 0;
-    background: #fff;
-    flex-shrink: 0;
-    display: block;
-  }
-  .equal-contrib-note {
-    font-size: 1em;
-    color: #444;
-    margin: 0.2em 0 0.8em 0;
-    font-style: italic;
-  }
-  .employment-item {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 1.5rem 0;
-    background: #f9fafb;
-    border-radius: 8px;
-    margin-bottom: 1.2rem;
-  }
-  .institution-details {
-    flex: 1;
-  }
-  .education-item {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 1.5rem 0;
-    background: #f9fafb;
-    border-radius: 8px;
-    margin-bottom: 1.2rem;
-  }
 </style>
 
 <header class="header">
@@ -180,7 +141,6 @@ permalink: /
       <p class="publication-authors">
         Michele Mancusi<span class="equal-contrib" title="Equal contribution">*</span>, <strong class="author-me">Yurii Halychanskyi</strong><span class="equal-contrib" title="Equal contribution">*</span>, Kin Wai Cheuk, Eloi Moliner, Chieh-Hsin Lai, Stefan Uhlich, Junghyun Koo, Marco A Martínez-Ramírez, Wei-Hsiang Liao, Giorgio Fabbro, Yuki Mitsufuji
       </p>
-      <p class="equal-contrib-note"><span class="equal-contrib">*</span> Equal contribution</p>
       <p class="publication-venue">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2025.</p>
       <div class="publication-links">
         <a href="https://arxiv.org/abs/2409.06096">[Abstract]</a>
@@ -195,7 +155,8 @@ permalink: /
   <h2 class="section-title">Research Experience</h2>
 
   <div class="employment-grid">
-    <div class="education-item">
+
+    <div class="employment-item">
       <img src="images/logo_sonyai.png" alt="Sony AI Logo" class="institution-logo">
       <div class="institution-details">
         <h3>Sony AI</h3>
@@ -204,7 +165,8 @@ permalink: /
         <div class="date">Summer 2024</div>
       </div>
     </div>
-    <div class="education-item">
+
+    <div class="employment-item">
       <img src="images/logo_ml4sci.png" alt="ML4SCI Logo" class="institution-logo">
       <div class="institution-details">
         <h3>Machine Learning for Science (ML4SCI)</h3>
@@ -213,6 +175,7 @@ permalink: /
         <div class="date">Summer 2021, Summer 2022</div>
       </div>
     </div>
+
   </div>
 </section>
 
