@@ -94,12 +94,26 @@ permalink: /
     margin-right: 1.2rem;
     margin-bottom: 0;
     background: #fff;
+    flex-shrink: 0;
+    display: block;
   }
   .equal-contrib-note {
     font-size: 1em;
     color: #444;
     margin: 0.2em 0 0.8em 0;
     font-style: italic;
+  }
+  .employment-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    background: #f9fafb;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+  }
+  .institution-details {
+    flex: 1;
   }
 </style>
 
@@ -160,8 +174,8 @@ permalink: /
       <p class="equal-contrib-note"><span class="equal-contrib">*</span> Equal contribution</p>
       <p class="publication-venue">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2025.</p>
       <div class="publication-links">
-        <a href="#">[Abstract]</a>
-        <a href="https://arxiv.org/abs/2409.06096" target="_blank" rel="noopener">[Paper]</a>
+        <a href="https://arxiv.org/abs/2409.06096">[Abstract]</a>
+        <a href="https://arxiv.org/pdf/2409.06096" target="_blank" rel="noopener">[Paper]</a>
       </div>
     </div>
   </div>
