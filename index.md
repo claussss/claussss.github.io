@@ -111,9 +111,10 @@ permalink: /
   }
   .equal-contrib-note {
     font-size: 0.98em;
-    color: #444;
+    color: var(--text-normal, #444);
     margin: 0.2em 0 0.8em 0;
     font-style: italic;
+    transition: color 0.2s;
   }
 </style>
 
