@@ -86,8 +86,8 @@ permalink: /
     vertical-align: super;
   }
   .institution-logo {
-    width: 48px;
-    height: 48px;
+    width: 52px;
+    height: 52px;
     object-fit: contain;
     border-radius: 8px;
     margin-right: 1.2rem;
@@ -192,7 +192,7 @@ permalink: /
       <div class="institution-details">
         <h3>Sony AI</h3>
         <div class="location">Tokyo, Japan</div>
-        <div class="degree">Research Scientist (Intern)</div>
+        <div class="degree">Research Scientist Intern</div>
         <div class="date">Summer 2024</div>
       </div>
     </div>
@@ -202,7 +202,7 @@ permalink: /
       <div class="institution-details">
         <h3>Machine Learning for Science (ML4SCI)</h3>
         <div class="location">Remote</div>
-        <div class="degree">Research Intern (Google Summer of Code)</div>
+        <div class="degree">Research Scientist Intern (Google Summer of Code)</div>
         <div class="date">Summer 2021, Summer 2022</div>
       </div>
     </div>
@@ -220,7 +220,7 @@ permalink: /
         <h3>University of Illinois Urbana‑Champaign</h3>
         <div class="location">Urbana, IL</div>
         <div class="degree">PhD in Computer Science</div>
-        <div class="date">Aug 2023 – May 2028 (expected)</div>
+        <div class="date">Aug 2023 – May 2028 (Expected)</div>
       </div>
     </div>
 
@@ -237,9 +237,6 @@ permalink: /
   </div>
 </section>
 
-<footer>
-  <p>Last updated in Oct. 2025.</p>
-</footer>
 
 <!--
   Note: For best results, add the referenced images (profile, logos, icons) to your images/ directory.
