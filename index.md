@@ -16,8 +16,8 @@ permalink: /
     align-items: center;
   }
   .profile-img {
-    width: 200px; /* Change this value to adjust profile pic size */
-    height: 200px; /* Change this value to adjust profile pic size */
+    width: 220px; /* Change this value to adjust profile pic size */
+    height: 220px; /* Change this value to adjust profile pic size */
     object-fit: cover;
     object-position: center top; /* Shift the crop up to show more of the top part */
     border-radius: 12px;
@@ -77,10 +77,18 @@ permalink: /
     max-height: 0 !important;
     overflow: hidden !important;
   }
+  .equal-contrib {
+    font-size: 0.95em;
+    font-weight: 600;
+    color: #2563eb;
+    margin-left: 2px;
+    margin-right: 6px;
+    vertical-align: super;
+  }
 </style>
 
 <header class="header">
-  <img src="images/profile.jpg" alt="Profile" class="profile-img">
+  <img src="images/profile_final.jpg" alt="Profile" class="profile-img">
   <div class="header-content">
     <h1>Yurii Halychanskyi</h1>
     <div class="social-links">
@@ -105,9 +113,10 @@ permalink: /
   <h2 class="section-title">About Me</h2>
   <div class="about-item">
     <p>
-      I am a PhD student at the <strong>University of Illinois Urbana‑Champaign (UIUC)</strong>, advised by Volodymyr Kindratenko.
-      My research focuses on <strong>generative audio modeling</strong> for <strong>cross‑domain conversion</strong>, including tasks such as timbre and accent transfer in low‑resource or unsupervised settings.
+      I am a PhD student at the <strong>University of Illinois Urbana-Champaign (UIUC)</strong>, advised by Volodymyr Kindratenko.
+      My research focuses on <strong>generative audio modeling</strong> for <strong>cross-domain conversion</strong>, including tasks such as timbre and accent transfer in low-resource or unsupervised settings.
     </p>
+  </div>
 </section>
 
 <section class="section">
@@ -118,7 +127,7 @@ permalink: /
     <div class="publication-content">
       <h3>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</h3>
       <p class="publication-authors"><strong class="author-me">Yurii Halychanskyi</strong>, Cameron Churchwell, Yutong Wen, Volodymyr Kindratenko.</p>
-      <p class="publication-venue">Preprint.</p>
+      <p class="publication-venue">To appear at IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2025.</p>
       <div class="publication-links">
         <a href="#">[Abstract]</a>
         <a href="#">[Paper]</a>
@@ -129,12 +138,14 @@ permalink: /
   <!-- Latent Diffusion Bridges for Unsupervised Musical Audio Timbre Transfer -->
   <div class="publication-card">
     <div class="publication-content">
-      <h3>Latent Diffusion Bridges for Unsupervised Musical Audio Timbre Transfer</h3>
-      <p class="publication-authors"><strong class="author-me">Yurii Halychanskyi</strong>, et&nbsp;al.</p>
-      <p class="publication-venue">arXiv, 2024.</p>
+      <h3>Latent diffusion bridges for unsupervised musical audio timbre transfer</h3>
+      <p class="publication-authors">
+        Michele Mancusi<span class="equal-contrib" title="Equal contribution">*</span>, <strong class="author-me">Yurii Halychanskyi</strong><span class="equal-contrib" title="Equal contribution">*</span>, Kin Wai Cheuk, Eloi Moliner, Chieh-Hsin Lai, Stefan Uhlich, Junghyun Koo, Marco A Martínez-Ramírez, Wei-Hsiang Liao, Giorgio Fabbro, Yuki Mitsufuji
+      </p>
+      <p class="publication-venue">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2025.</p>
       <div class="publication-links">
-        <a href="https://arxiv.org/abs/2409.06096" target="_blank" rel="noopener">[Paper]</a>
         <a href="#">[Abstract]</a>
+        <a href="https://arxiv.org/abs/2409.06096" target="_blank" rel="noopener">[Paper]</a>
       </div>
     </div>
   </div>
