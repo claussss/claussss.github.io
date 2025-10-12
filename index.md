@@ -85,6 +85,22 @@ permalink: /
     margin-right: 6px;
     vertical-align: super;
   }
+  .institution-logo {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-right: 1.2rem;
+    margin-bottom: 0;
+    background: #fff;
+  }
+  .equal-contrib-note {
+    font-size: 1em;
+    color: #444;
+    margin: 0.2em 0 0.8em 0;
+    font-style: italic;
+  }
 </style>
 
 <header class="header">
@@ -127,7 +143,6 @@ permalink: /
     <div class="publication-content">
       <h3>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</h3>
       <p class="publication-authors"><strong class="author-me">Yurii Halychanskyi</strong>, Cameron Churchwell, Yutong Wen, Volodymyr Kindratenko.</p>
-      <p class="publication-venue">To appear at IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2025.</p>
       <div class="publication-links">
         <a href="#">[Abstract]</a>
         <a href="#">[Paper]</a>
@@ -142,6 +157,7 @@ permalink: /
       <p class="publication-authors">
         Michele Mancusi<span class="equal-contrib" title="Equal contribution">*</span>, <strong class="author-me">Yurii Halychanskyi</strong><span class="equal-contrib" title="Equal contribution">*</span>, Kin Wai Cheuk, Eloi Moliner, Chieh-Hsin Lai, Stefan Uhlich, Junghyun Koo, Marco A Martínez-Ramírez, Wei-Hsiang Liao, Giorgio Fabbro, Yuki Mitsufuji
       </p>
+      <p class="equal-contrib-note"><span class="equal-contrib">*</span> Equal contribution</p>
       <p class="publication-venue">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2025.</p>
       <div class="publication-links">
         <a href="#">[Abstract]</a>
