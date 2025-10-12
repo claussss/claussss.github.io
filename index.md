@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Yurii Halychanskyi"
+# Remove the title so it doesn't show above the profile card
 permalink: /
 ---
 
@@ -26,9 +26,11 @@ permalink: /
   .header-content h1 {
     font-size: 2.2rem;
     margin-bottom: 0.5rem;
-    background: linear-gradient(to right, #2563eb, #4f46e5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #222;
+    background: none;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: initial;
+    font-weight: 700;
   }
   .social-links {
     display: flex;
@@ -62,7 +64,18 @@ permalink: /
     }
   }
   /* Hide day/night toggle if present */
-  .dark-toggle, .js-dark-toggle, .color-mode-toggle, .color-mode { display: none !important; }
+  .dark-toggle, .js-dark-toggle, .color-mode-toggle, .color-mode, .site-header .site-nav .page-link[title*="Dark"], .site-header .site-nav .page-link[title*="Night"], .site-header .site-nav .page-link[title*="Light"] {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    height: 0 !important;
+    width: 0 !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    max-width: 0 !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+  }
 </style>
 
 <header class="header">
