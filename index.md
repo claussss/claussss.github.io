@@ -86,10 +86,10 @@ permalink: /
     vertical-align: super;
   }
   .institution-logo {
-    width: 52px;
-    height: 52px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
-    border-radius: 8px;
+    border-radius: 5px;
     margin-right: 1.2rem;
     margin-bottom: 0;
     background: none;
