@@ -5,9 +5,9 @@ title         : "Yurii Halychanskyi"
 title_separator: "·"
 name          : &name "Yurii Halychanskyi"
 description   : &description "PhD student at UIUC — speech, accent conversion, and generative audio."
-url           : https://claussss.github.io       # user site -> root domain
+url           : https://yhalyc.github.io       # user site -> root domain
 baseurl       : ""                               # IMPORTANT: keep empty for user sites
-repository    : "Claussss/claussss.github.io"
+repository    : "yhalyc/yhalyc.github.io"
 
 # ---------------- Author (sidebar content hidden globally below) -------------
 author:
@@ -17,7 +17,7 @@ author:
   email       : "yhalyc [AT] illinois [DOT] edu"
 
   # Minimal profiles (leave blank to hide icons)
-  github      : "Claussss"
+  github      : "yhalyc"
   googlescholar: ""       # add later if you want
   linkedin    : ""        # add later if you want
   twitter     : ""        # add later if you want

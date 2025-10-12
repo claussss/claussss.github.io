@@ -126,7 +126,7 @@ permalink: /
       <a target="_blank" href="https://scholar.google.com/citations?user=Rcx5Jn8AAAAJ&hl=en" title="Google Scholar">
         <img src="images/Google_Scholar_logo.svg" width="28" height="28" alt="Google Scholar">
       </a>
-      <a target="_blank" href="https://github.com/Claussss" title="Github">
+      <a target="_blank" href="https://github.com/yhalyc" title="Github">
         <img src="images/Octicons-mark-github.svg" width="28" height="28" alt="GitHub">
       </a>
       <a target="_blank" href="https://www.linkedin.com/in/yurii-halychanskyi-a57590169/" title="LinkedIn">
