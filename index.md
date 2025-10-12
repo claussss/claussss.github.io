@@ -16,8 +16,8 @@ permalink: /
     align-items: center;
   }
   .profile-img {
-    width: 180px;
-    height: 180px;
+    width: 200px; /* Change this value to adjust profile pic size */
+    height: 200px; /* Change this value to adjust profile pic size */
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -61,6 +61,8 @@ permalink: /
       height: 120px;
     }
   }
+  /* Hide day/night toggle if present */
+  .dark-toggle, .js-dark-toggle, .color-mode-toggle, .color-mode { display: none !important; }
 </style>
 
 <header class="header">
