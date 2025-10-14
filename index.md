@@ -159,8 +159,8 @@ permalink: /
       <h3>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</h3>
       <p class="publication-authors"><strong class="author-me">Yurii Halychanskyi</strong>, Cameron Churchwell, Yutong Wen, Volodymyr Kindratenko.</p>
       <div class="publication-links">
-        <a href="#">[Abstract]</a>
-        <a href="#">[Paper]</a>
+        <a href="https://arxiv.org/abs/2510.10785">[Abstract]</a>
+        <a href="https://arxiv.org/pdf/2510.10785">[Paper]</a>
       </div>
     </div>
   </div>
