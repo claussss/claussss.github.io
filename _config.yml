@@ -13,14 +13,29 @@ repository    : "claussss/claussss.github.io"
 author:
   avatar      : "images/profile.jpg"             # put your headshot here
   name        : "Yurii Halychanskyi"
-  bio         : ""                               # (not shown)
-  email       : "yhalyc [AT] illinois [DOT] edu"
+  bio         : "PhD student at UIUC focused on generative audio, speech, and accent conversion."                               # (not shown)
+  email       : "yuriih2 [AT] illinois [DOT] edu"
 
   # Minimal profiles (leave blank to hide icons)
   github      : "claussss"
-  googlescholar: ""       # add later if you want
-  linkedin    : ""        # add later if you want
-  twitter     : ""        # add later if you want
+  googlescholar: "https://scholar.google.com/citations?user=Rcx5Jn8AAAAJ"
+  linkedin    : "yurii-halychanskyi-a57590169"
+  twitter     : "Yurii46278911"
+
+twitter:
+  username: "Yurii46278911"
+
+social:
+  type: "Person"
+  name: "Yurii Halychanskyi"
+  links:
+    - "https://scholar.google.com/citations?user=Rcx5Jn8AAAAJ"
+    - "https://github.com/claussss"
+    - "https://www.linkedin.com/in/yurii-halychanskyi-a57590169/"
+    - "https://x.com/Yurii46278911"
+
+og_description: "PhD student at UIUC researching generative audio, speech, and accent conversion."
+og_image: "profile_final.jpg"
 
 # ---------------- Headings for publications (if you add items later) ---------
 publication_category:

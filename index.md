@@ -1,7 +1,11 @@
 ---
 layout: single
-# Remove the title so it doesn't show above the profile card
 permalink: /
+title: "Yurii Halychanskyi"
+description: "Yurii Halychanskyi — UIUC PhD student researching generative audio, speech, and accent conversion."
+excerpt: "Yurii Halychanskyi is a PhD student at UIUC focusing on generative audio models, speech technology, and accent conversion."
+last_modified_at: 2024-05-26
+author: "Yurii Halychanskyi"
 ---
 
 <style>
@@ -119,7 +123,7 @@ permalink: /
 </style>
 
 <header class="header">
-  <img src="images/profile_final.jpg" alt="Profile" class="profile-img">
+  <img src="images/profile_final.jpg" alt="Portrait of Yurii Halychanskyi" class="profile-img">
   <div class="header-content">
     <h1>Yurii Halychanskyi</h1>
     <div class="social-links">
