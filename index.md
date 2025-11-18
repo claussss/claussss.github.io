@@ -6,6 +6,7 @@ description: "Yurii Halychanskyi — UIUC PhD student researching generative aud
 excerpt: "Yurii Halychanskyi is a PhD student at UIUC focusing on generative audio models, speech technology, and accent conversion."
 last_modified_at: 2024-05-26
 author: "Yurii Halychanskyi"
+keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Speech Conversion", "Accent Conversion", "Machine Learning"]
 ---
 
 <style>

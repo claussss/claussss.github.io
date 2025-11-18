@@ -120,3 +120,8 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# ---------------- SEO & Verification ----------------------------------------
+google_site_verification: "_deHC0WG3xQ0LFYoD1tHbFegi47ELXAsjEM0UQ95wec"
+keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Speech Conversion", "Accent Conversion", "Machine Learning"]
+
