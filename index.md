@@ -24,7 +24,8 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
     width: 220px;
     height: 220px;
     object-fit: cover;
-    object-position: center 15%;
+    object-position: center 40%;
+    transform: scale(1.05);
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 0;
