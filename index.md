@@ -124,7 +124,7 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
 </style>
 
 <header class="header">
-  <img src="images/profile_final.jpg" alt="Portrait of Yurii Halychanskyi" class="profile-img">
+  <img src="images/profile_new_close.jpg" alt="Portrait of Yurii Halychanskyi" class="profile-img">
   <div class="header-content">
     <h1>Yurii Halychanskyi</h1>
     <div class="social-links">
@@ -163,6 +163,7 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
     <div class="publication-content">
       <h3>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</h3>
       <p class="publication-authors"><strong class="author-me">Yurii Halychanskyi</strong>, Cameron Churchwell, Yutong Wen, Volodymyr Kindratenko.</p>
+      <p class="publication-venue">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2026.</p>
       <div class="publication-links">
         <a href="https://arxiv.org/abs/2510.10785">[Abstract]</a>
         <a href="https://arxiv.org/pdf/2510.10785">[Paper]</a>
