@@ -24,7 +24,7 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
     width: 220px; /* Change this value to adjust profile pic size */
     height: 220px; /* Change this value to adjust profile pic size */
     object-fit: cover;
-    object-position: center top; /* Shift the crop up to show more of the top part */
+    object-position: center 15%;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 0;
