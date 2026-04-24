@@ -20,21 +20,14 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     align-items: center;
   }
-  .profile-img-wrapper {
+  .profile-img {
     width: 220px;
     height: 220px;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    flex-shrink: 0;
-  }
-  .profile-img {
-    width: 117.6%;
-    height: 117.6%;
     object-fit: cover;
     object-position: center 15%;
-    margin-left: -8.8%;
-    margin-top: -8.8%;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
   }
   .header-content h1 {
     font-size: 2.2rem;
@@ -131,9 +124,7 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
 </style>
 
 <header class="header">
-  <div class="profile-img-wrapper">
-    <img src="images/profile_new_close.jpg" alt="Portrait of Yurii Halychanskyi" class="profile-img">
-  </div>
+  <img src="images/profile_new_close_fur.jpg" alt="Portrait of Yurii Halychanskyi" class="profile-img">
   <div class="header-content">
     <h1>Yurii Halychanskyi</h1>
     <div class="social-links">
