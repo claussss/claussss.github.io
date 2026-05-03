@@ -31,8 +31,8 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
     align-items: center;
   }
   .profile-img {
-    width: 220px;
-    height: 220px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     object-position: center 40%;
     transform: scale(1.05);
@@ -111,11 +111,6 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
   html[data-theme="dark"] .equal-contrib-note {
     color: #cfd5e0;
   }
-  /* Larger social icons */
-  .social-links a img {
-    width: 48px !important;
-    height: 48px !important;
-  }
   /* Float theme toggle to top-right corner of viewport */
   #theme-toggle {
     position: fixed !important;
@@ -176,8 +171,8 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
     color: #b8bfca;
   }
   .institution-logo {
-    width: 60px;
-    height: 60px;
+    width: 95px;
+    height: 95px;
     object-fit: contain;
     border-radius: 5px;
     margin-right: 1.2rem;
@@ -362,12 +357,12 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
       <span class="chat-meta">Tuesday, May 5, 2026 · 14:00–16:00</span>
     </div>
     <div class="chat-bubble">
-      Presented <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> at the <a href="https://forms.illinois.edu/sec/740525403" target="_blank" rel="noopener">4th Annual NCSA Student Research Conference</a>.
+      Presented <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> at the 4th Annual NCSA Student Research Conference.
       <span class="chat-meta">April 23, 2026</span>
     </div>
     <div class="chat-bubble">
       Presented <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> and <strong>Few-Shot Accent Synthesis for ASR with LLM-Guided Phoneme Editing</strong> at <a href="https://nlp.cs.illinois.edu/msld.html" target="_blank" rel="noopener">Midwest Speech and Language Days (MSLD) 2026</a>.
-      <span class="chat-meta">April 15–16, 2026</span>
+      <span class="chat-meta">April 15, 2026</span>
     </div>
   </div>
 </section>
