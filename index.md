@@ -77,8 +77,8 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
       padding: 1.2rem;
     }
     .profile-img {
-      width: 120px;
-      height: 120px;
+      width: 240px;
+      height: 240px;
     }
   }
   /* Hide day/night toggle if present */
