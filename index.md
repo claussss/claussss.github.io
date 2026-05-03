@@ -111,6 +111,11 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
   html[data-theme="dark"] .equal-contrib-note {
     color: #cfd5e0;
   }
+  /* Slightly larger social icons */
+  .social-links a img {
+    width: 36px !important;
+    height: 36px !important;
+  }
   /* Float theme toggle to top-right corner of viewport */
   #theme-toggle {
     position: fixed !important;
@@ -193,6 +198,18 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
   }
   .institution-details {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .institution-details h3 {
+    margin: 0 0 0.25rem 0;
+    line-height: 1.2;
+  }
+  .institution-details .location,
+  .institution-details .degree,
+  .institution-details .date {
+    line-height: 1.35;
   }
   .equal-contrib-note {
     font-size: 0.98em;
