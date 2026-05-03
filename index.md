@@ -10,14 +10,24 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
 ---
 
 <style>
+  /* Warmer page background to harmonize with portrait foliage tones */
+  body, .page, .page__content, #main {
+    background-color: #f3f4f1 !important;
+  }
+  html[data-theme="dark"] body,
+  html[data-theme="dark"] .page,
+  html[data-theme="dark"] .page__content,
+  html[data-theme="dark"] #main {
+    background-color: #252a34 !important;
+  }
   .header {
     display: flex;
     gap: 2rem;
     margin-bottom: 2rem;
     padding: 2rem;
-    background: white;
+    background: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px rgba(60, 50, 30, 0.07);
     align-items: center;
   }
   .profile-img {
@@ -27,7 +37,8 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
     object-position: center 40%;
     transform: scale(1.05);
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(60, 50, 30, 0.10);
+    border: 2px solid #a7b89a;
     margin-bottom: 0;
   }
   .header-content h1 {
@@ -52,10 +63,10 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
     transition: color 0.2s;
   }
   .social-links a:hover {
-    color: #2563eb;
+    color: #2f6f8f;
   }
   .email {
-    color: #2563eb;
+    color: #2f6f8f;
     text-decoration: none;
     font-size: 1.1rem;
     margin-top: 0.5rem;
@@ -83,13 +94,63 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
     max-height: 0 !important;
     overflow: hidden !important;
   }
+  /* Hide redundant name occurrences: top-nav site title link and page H1 */
+  .masthead__menu-item--lg { display: none !important; }
+  .page__title { display: none !important; }
   .equal-contrib {
     font-size: 0.95em;
     font-weight: 600;
-    color: #2563eb;
+    color: #2f6f8f;
     margin-left: 2px;
     margin-right: 6px;
     vertical-align: super;
+  }
+  html[data-theme="dark"] .equal-contrib {
+    color: #7eb6ff;
+  }
+  html[data-theme="dark"] .equal-contrib-note {
+    color: #cfd5e0;
+  }
+  /* Larger social icons */
+  .social-links a img {
+    width: 36px !important;
+    height: 36px !important;
+  }
+  /* Presentations "chat" box */
+  .presentations-chat {
+    margin-top: 1rem;
+    padding: 1.2rem 1.4rem;
+    background: #f4f7fb;
+    border-radius: 16px;
+    border: 1px solid #e3e8f0;
+    max-width: 720px;
+  }
+  html[data-theme="dark"] .presentations-chat {
+    background: #2e3440;
+    border-color: #3b4252;
+  }
+  .presentations-chat .chat-bubble {
+    background: white;
+    border-radius: 14px;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.7rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+    line-height: 1.45;
+  }
+  html[data-theme="dark"] .presentations-chat .chat-bubble {
+    background: #3b4252;
+    color: #eceff4;
+    box-shadow: none;
+  }
+  .presentations-chat .chat-bubble:last-child { margin-bottom: 0; }
+  .presentations-chat .chat-meta {
+    display: block;
+    font-size: 0.85em;
+    color: #6b7280;
+    margin-top: 0.25rem;
+  }
+  html[data-theme="dark"] .presentations-chat .chat-meta {
+    color: #b8bfca;
   }
   .institution-logo {
     width: 60px;
@@ -150,7 +211,7 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
   <h2 class="section-title">About Me</h2>
   <div class="about-item">
     <p>
-      I am a PhD student at the <strong>University of Illinois Urbana-Champaign (UIUC)</strong>, advised by Volodymyr Kindratenko.
+      I am a PhD student at the <strong>University of Illinois Urbana-Champaign (UIUC)</strong>, co-advised by Volodymyr Kindratenko and Mark Hasegawa-Johnson.
       My research focuses on <strong>generative audio modeling</strong> for <strong>cross-domain conversion</strong>, including tasks such as timbre and accent transfer in low-resource or unsupervised settings.
     </p>
   </div>
@@ -168,6 +229,30 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
       <div class="publication-links">
         <a href="https://arxiv.org/abs/2510.10785">[Abstract]</a>
         <a href="https://arxiv.org/pdf/2510.10785">[Paper]</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Accent Conversion Survey -->
+  <div class="publication-card">
+    <div class="publication-content">
+      <h3>Accent Conversion: A Problem-Driven Survey of Sociolinguistic and Technical Constraints</h3>
+      <p class="publication-authors"><strong class="author-me">Yurii Halychanskyi</strong>, Jianfeng Steven Guo, Volodymyr Kindratenko.</p>
+      <div class="publication-links">
+        <a href="https://arxiv.org/abs/2604.27281">[Abstract]</a>
+        <a href="https://arxiv.org/pdf/2604.27281">[Paper]</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Few-Shot Accent Synthesis for ASR -->
+  <div class="publication-card">
+    <div class="publication-content">
+      <h3>Few-Shot Accent Synthesis for ASR with LLM-Guided Phoneme Editing</h3>
+      <p class="publication-authors"><strong class="author-me">Yurii Halychanskyi</strong>, Nimet Beyza Bozdag, Mark Hasegawa-Johnson, Dilek Hakkani-Tür, Volodymyr Kindratenko.</p>
+      <div class="publication-links">
+        <a href="https://arxiv.org/abs/2604.27273">[Abstract]</a>
+        <a href="https://arxiv.org/pdf/2604.27273">[Paper]</a>
       </div>
     </div>
   </div>
@@ -242,6 +327,25 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
       </div>
     </div>
 
+  </div>
+</section>
+
+
+<section class="section">
+  <h2 class="section-title">Presentations</h2>
+  <div class="presentations-chat">
+    <div class="chat-bubble">
+      Upcoming: presenting <strong>FAC-FACodec</strong> at <strong>ICASSP 2026</strong> — session <em>SLP-P6: Neural Vocoders and Codecs</em>, Poster Area 43.
+      <span class="chat-meta">Tuesday, May 5, 2026 · 14:00–16:00</span>
+    </div>
+    <div class="chat-bubble">
+      Presented <strong>FAC-FACodec</strong> at the <a href="https://forms.illinois.edu/sec/740525403" target="_blank" rel="noopener">4th Annual NCSA Student Research Conference</a>.
+      <span class="chat-meta">NCSA Building, UIUC · April 23, 2026</span>
+    </div>
+    <div class="chat-bubble">
+      Presented <strong>FAcodec</strong> and the <strong>synthetic accented ASR dataset</strong> work at <a href="https://nlp.cs.illinois.edu/msld.html" target="_blank" rel="noopener">Midwest Speech and Language Days (MSLD) 2026</a>.
+      <span class="chat-meta">NCSA Auditorium, UIUC · April 15–16, 2026</span>
+    </div>
   </div>
 </section>
 
