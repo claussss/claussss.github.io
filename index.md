@@ -113,8 +113,31 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
   }
   /* Larger social icons */
   .social-links a img {
-    width: 36px !important;
-    height: 36px !important;
+    width: 48px !important;
+    height: 48px !important;
+  }
+  /* Float theme toggle to top-right corner of viewport */
+  #theme-toggle {
+    position: fixed !important;
+    top: 0.8rem;
+    right: 1rem;
+    z-index: 9999;
+    background: transparent;
+  }
+  #theme-toggle a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.85);
+    box-shadow: 0 2px 6px rgba(60,50,30,0.12);
+    cursor: pointer;
+  }
+  html[data-theme="dark"] #theme-toggle a {
+    background: rgba(40,46,58,0.85);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
   }
   /* Presentations "chat" box */
   .presentations-chat {
@@ -220,15 +243,14 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
 <section class="section">
   <h2 class="section-title">Publications</h2>
 
-  <!-- FAC-FACodec -->
+  <!-- Few-Shot Accent Synthesis for ASR -->
   <div class="publication-card">
     <div class="publication-content">
-      <h3>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</h3>
-      <p class="publication-authors"><strong class="author-me">Yurii Halychanskyi</strong>, Cameron Churchwell, Yutong Wen, Volodymyr Kindratenko.</p>
-      <p class="publication-venue">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2026.</p>
+      <h3>Few-Shot Accent Synthesis for ASR with LLM-Guided Phoneme Editing</h3>
+      <p class="publication-authors"><strong class="author-me">Yurii Halychanskyi</strong>, Nimet Beyza Bozdag, Mark Hasegawa-Johnson, Dilek Hakkani-Tür, Volodymyr Kindratenko.</p>
       <div class="publication-links">
-        <a href="https://arxiv.org/abs/2510.10785">[Abstract]</a>
-        <a href="https://arxiv.org/pdf/2510.10785">[Paper]</a>
+        <a href="https://arxiv.org/abs/2604.27273">[Abstract]</a>
+        <a href="https://arxiv.org/pdf/2604.27273">[Paper]</a>
       </div>
     </div>
   </div>
@@ -245,14 +267,15 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
     </div>
   </div>
 
-  <!-- Few-Shot Accent Synthesis for ASR -->
+  <!-- FAC-FACodec -->
   <div class="publication-card">
     <div class="publication-content">
-      <h3>Few-Shot Accent Synthesis for ASR with LLM-Guided Phoneme Editing</h3>
-      <p class="publication-authors"><strong class="author-me">Yurii Halychanskyi</strong>, Nimet Beyza Bozdag, Mark Hasegawa-Johnson, Dilek Hakkani-Tür, Volodymyr Kindratenko.</p>
+      <h3>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</h3>
+      <p class="publication-authors"><strong class="author-me">Yurii Halychanskyi</strong>, Cameron Churchwell, Yutong Wen, Volodymyr Kindratenko.</p>
+      <p class="publication-venue">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2026.</p>
       <div class="publication-links">
-        <a href="https://arxiv.org/abs/2604.27273">[Abstract]</a>
-        <a href="https://arxiv.org/pdf/2604.27273">[Paper]</a>
+        <a href="https://arxiv.org/abs/2510.10785">[Abstract]</a>
+        <a href="https://arxiv.org/pdf/2510.10785">[Paper]</a>
       </div>
     </div>
   </div>
@@ -335,16 +358,16 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
   <h2 class="section-title">Presentations</h2>
   <div class="presentations-chat">
     <div class="chat-bubble">
-      Upcoming: presenting <strong>FAC-FACodec</strong> at <strong>ICASSP 2026</strong> — session <em>SLP-P6: Neural Vocoders and Codecs</em>, Poster Area 43.
+      Upcoming: presenting <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> at <strong>ICASSP 2026</strong> — session <em>SLP-P6: Neural Vocoders and Codecs</em>.
       <span class="chat-meta">Tuesday, May 5, 2026 · 14:00–16:00</span>
     </div>
     <div class="chat-bubble">
-      Presented <strong>FAC-FACodec</strong> at the <a href="https://forms.illinois.edu/sec/740525403" target="_blank" rel="noopener">4th Annual NCSA Student Research Conference</a>.
-      <span class="chat-meta">NCSA Building, UIUC · April 23, 2026</span>
+      Presented <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> at the <a href="https://forms.illinois.edu/sec/740525403" target="_blank" rel="noopener">4th Annual NCSA Student Research Conference</a>.
+      <span class="chat-meta">April 23, 2026</span>
     </div>
     <div class="chat-bubble">
-      Presented <strong>FAcodec</strong> and the <strong>synthetic accented ASR dataset</strong> work at <a href="https://nlp.cs.illinois.edu/msld.html" target="_blank" rel="noopener">Midwest Speech and Language Days (MSLD) 2026</a>.
-      <span class="chat-meta">NCSA Auditorium, UIUC · April 15–16, 2026</span>
+      Presented <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> and <strong>Few-Shot Accent Synthesis for ASR with LLM-Guided Phoneme Editing</strong> at <a href="https://nlp.cs.illinois.edu/msld.html" target="_blank" rel="noopener">Midwest Speech and Language Days (MSLD) 2026</a>.
+      <span class="chat-meta">April 15–16, 2026</span>
     </div>
   </div>
 </section>
