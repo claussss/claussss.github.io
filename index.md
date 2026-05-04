@@ -316,6 +316,16 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
   <div class="employment-grid">
 
     <div class="employment-item">
+      <img src="images/logo_meta.webp" alt="Meta Logo" class="institution-logo">
+      <div class="institution-details">
+        <h3>Meta</h3>
+        <div class="location">London, United Kingdom</div>
+        <div class="degree">Incoming Research Scientist Intern</div>
+        <div class="date">Summer 2026</div>
+      </div>
+    </div>
+
+    <div class="employment-item">
       <img src="images/logo_sonyai.png" alt="Sony AI Logo" class="institution-logo">
       <div class="institution-details">
         <h3>Sony AI</h3>
