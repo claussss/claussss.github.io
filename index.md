@@ -320,7 +320,7 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
       <div class="institution-details">
         <h3>Meta</h3>
         <div class="location">London, United Kingdom</div>
-        <div class="degree">Incoming Research Scientist Intern</div>
+        <div class="degree">Research Scientist Intern</div>
         <div class="date">Summer 2026</div>
       </div>
     </div>
@@ -380,7 +380,7 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
   <h2 class="section-title">Presentations</h2>
   <div class="presentations-chat">
     <div class="chat-bubble">
-      Upcoming: presenting <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> at <strong>ICASSP 2026</strong> — session <em>SLP-P6: Neural Vocoders and Codecs</em>.
+      Presenting <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> at <strong>ICASSP 2026</strong> — session <em>SLP-P6: Neural Vocoders and Codecs</em>.
       <span class="chat-meta">Tuesday, May 5, 2026 · 14:00–16:00</span>
     </div>
     <div class="chat-bubble">
