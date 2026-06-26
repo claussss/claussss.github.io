@@ -369,6 +369,7 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
     <div class="publication-content">
       <div class="venue-row">
         <span class="venue-badge">ICASSP 2026</span>
+        <span class="venue-badge poster">Poster</span>
       </div>
       <h3>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</h3>
       <p class="publication-authors"><strong class="author-me">Yurii Halychanskyi</strong>, Cameron Churchwell, Yutong Wen, Volodymyr Kindratenko.</p>
@@ -384,6 +385,7 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
     <div class="publication-content">
       <div class="venue-row">
         <span class="venue-badge">ICASSP 2025</span>
+        <span class="venue-badge poster">Poster</span>
       </div>
       <h3>Latent diffusion bridges for unsupervised musical audio timbre transfer</h3>
       <p class="publication-authors">
@@ -469,19 +471,19 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
   <h2 class="section-title">Presentations</h2>
   <div class="presentations-chat">
     <div class="chat-bubble">
-      <span class="venue-badge oral">Oral</span> Will present <strong>Few-Shot Synthetic Accented Speech for ASR Fine-Tuning: What Helps and When?</strong> at the <a href="https://mlforaudioworkshop.github.io/" target="_blank" rel="noopener">Learning to Listen: ICML 2026 Workshop on Machine Learning for Audio</a> in Seoul, Korea.
+      Will present <strong>Few-Shot Synthetic Accented Speech for ASR Fine-Tuning: What Helps and When?</strong> at the <a href="https://mlforaudioworkshop.github.io/" target="_blank" rel="noopener">Learning to Listen: ICML 2026 Workshop on Machine Learning for Audio</a> in Seoul, Korea.
       <span class="chat-meta">Upcoming · July 10, 2026</span>
     </div>
     <div class="chat-bubble">
-      <span class="venue-badge poster">Poster</span> Presented <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> at <strong>ICASSP 2026</strong> — session <em>SLP-P6: Neural Vocoders and Codecs</em>.
+      Presented <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> at <strong>ICASSP 2026</strong> — session <em>SLP-P6: Neural Vocoders and Codecs</em>.
       <span class="chat-meta">Tuesday, May 5, 2026 · 14:00–16:00</span>
     </div>
     <div class="chat-bubble">
-      <span class="venue-badge poster">Poster</span> Presented <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> at the 4th Annual NCSA Student Research Conference.
+      Presented <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> at the 4th Annual NCSA Student Research Conference.
       <span class="chat-meta">April 23, 2026</span>
     </div>
     <div class="chat-bubble">
-      <span class="venue-badge poster">Poster</span> Presented <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> and <strong>Few-Shot Synthetic Accented Speech for ASR Fine-Tuning: What Helps and When?</strong> at <a href="https://nlp.cs.illinois.edu/msld.html" target="_blank" rel="noopener">Midwest Speech and Language Days (MSLD) 2026</a>.
+      Presented <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> and <strong>Few-Shot Synthetic Accented Speech for ASR Fine-Tuning: What Helps and When?</strong> at <a href="https://nlp.cs.illinois.edu/msld.html" target="_blank" rel="noopener">Midwest Speech and Language Days (MSLD) 2026</a>.
       <span class="chat-meta">April 15, 2026</span>
     </div>
   </div>
