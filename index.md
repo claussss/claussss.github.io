@@ -272,6 +272,11 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
     color: #8a5a00;
     border-color: #f2d59a;
   }
+  .venue-badge.poster {
+    background: #e8efe3;
+    color: #4f6a3f;
+    border-color: #d3e0c8;
+  }
   html[data-theme="dark"] .venue-badge {
     background: #2b4a57;
     color: #9ed0e6;
@@ -286,6 +291,11 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
     background: #5a4416;
     color: #f0c873;
     border-color: #7a5d1f;
+  }
+  html[data-theme="dark"] .venue-badge.poster {
+    background: #3a4636;
+    color: #b7d3a3;
+    border-color: #4a5942;
   }
 </style>
 
@@ -328,13 +338,12 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
   <div class="publication-card">
     <div class="publication-content">
       <div class="venue-row">
-        <span class="venue-badge">ICML 2026 Workshop on ML for Audio</span>
+        <span class="venue-badge">Learning to Listen: ICML 2026 Workshop on ML for Audio</span>
         <span class="venue-badge oral">Oral</span>
       </div>
       <h3>Few-Shot Synthetic Accented Speech for ASR Fine-Tuning: What Helps and When?</h3>
       <p class="publication-authors"><strong class="author-me">Yurii Halychanskyi</strong>, Nimet Beyza Bozdag, Mark Hasegawa-Johnson, Dilek Hakkani-Tür, Volodymyr Kindratenko.</p>
       <div class="publication-links">
-        <a href="https://arxiv.org/abs/2604.27273">[Abstract]</a>
         <a href="https://arxiv.org/pdf/2604.27273">[Paper]</a>
         <a href="https://claussss.github.io/few_shot_accent_synthesis_demo" target="_blank" rel="noopener">[Demo]</a>
       </div>
@@ -350,7 +359,6 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
       <h3>Accent Conversion: A Problem-Driven Survey of Sociolinguistic and Technical Constraints</h3>
       <p class="publication-authors"><strong class="author-me">Yurii Halychanskyi</strong>, Jianfeng Steven Guo, Volodymyr Kindratenko.</p>
       <div class="publication-links">
-        <a href="https://arxiv.org/abs/2604.27281">[Abstract]</a>
         <a href="https://arxiv.org/pdf/2604.27281">[Paper]</a>
       </div>
     </div>
@@ -365,7 +373,6 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
       <h3>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</h3>
       <p class="publication-authors"><strong class="author-me">Yurii Halychanskyi</strong>, Cameron Churchwell, Yutong Wen, Volodymyr Kindratenko.</p>
       <div class="publication-links">
-        <a href="https://arxiv.org/abs/2510.10785">[Abstract]</a>
         <a href="https://arxiv.org/pdf/2510.10785">[Paper]</a>
         <a href="https://claussss.github.io/accent_control_demo/" target="_blank" rel="noopener">[Demo]</a>
       </div>
@@ -384,7 +391,6 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
       </p>
       <p class="equal-contrib-note"><span class="equal-contrib">*</span> Equal contribution</p>
       <div class="publication-links">
-        <a href="https://arxiv.org/abs/2409.06096">[Abstract]</a>
         <a href="https://arxiv.org/pdf/2409.06096" target="_blank" rel="noopener">[Paper]</a>
         <a href="https://sony.github.io/diffusion-timbre-transfer/" target="_blank" rel="noopener">[Demo]</a>
       </div>
@@ -463,19 +469,19 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
   <h2 class="section-title">Presentations</h2>
   <div class="presentations-chat">
     <div class="chat-bubble">
-      Will present <strong>Few-Shot Synthetic Accented Speech for ASR Fine-Tuning: What Helps and When?</strong> (Oral) at the <a href="https://mlforaudioworkshop.github.io/" target="_blank" rel="noopener">Learning to Listen: ICML 2026 Workshop on Machine Learning for Audio</a> in Seoul, Korea.
+      <span class="venue-badge oral">Oral</span> Will present <strong>Few-Shot Synthetic Accented Speech for ASR Fine-Tuning: What Helps and When?</strong> at the <a href="https://mlforaudioworkshop.github.io/" target="_blank" rel="noopener">Learning to Listen: ICML 2026 Workshop on Machine Learning for Audio</a> in Seoul, Korea.
       <span class="chat-meta">Upcoming · July 10, 2026</span>
     </div>
     <div class="chat-bubble">
-      Presented a poster of <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> at <strong>ICASSP 2026</strong> — session <em>SLP-P6: Neural Vocoders and Codecs</em>.
+      <span class="venue-badge poster">Poster</span> Presented <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> at <strong>ICASSP 2026</strong> — session <em>SLP-P6: Neural Vocoders and Codecs</em>.
       <span class="chat-meta">Tuesday, May 5, 2026 · 14:00–16:00</span>
     </div>
     <div class="chat-bubble">
-      Presented a poster of <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> at the 4th Annual NCSA Student Research Conference.
+      <span class="venue-badge poster">Poster</span> Presented <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> at the 4th Annual NCSA Student Research Conference.
       <span class="chat-meta">April 23, 2026</span>
     </div>
     <div class="chat-bubble">
-      Presented posters of <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> and <strong>Few-Shot Synthetic Accented Speech for ASR Fine-Tuning: What Helps and When?</strong> at <a href="https://nlp.cs.illinois.edu/msld.html" target="_blank" rel="noopener">Midwest Speech and Language Days (MSLD) 2026</a>.
+      <span class="venue-badge poster">Poster</span> Presented <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> and <strong>Few-Shot Synthetic Accented Speech for ASR Fine-Tuning: What Helps and When?</strong> at <a href="https://nlp.cs.illinois.edu/msld.html" target="_blank" rel="noopener">Midwest Speech and Language Days (MSLD) 2026</a>.
       <span class="chat-meta">April 15, 2026</span>
     </div>
   </div>
