@@ -218,6 +218,75 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
     font-style: italic;
     transition: color 0.2s;
   }
+  /* Publication cards */
+  .publication-card {
+    background: #ffffff;
+    border: 1px solid #e6e3da;
+    border-radius: 12px;
+    padding: 1rem 1.3rem 1.1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 6px rgba(60, 50, 30, 0.05);
+  }
+  html[data-theme="dark"] .publication-card {
+    background: #2e3440;
+    border-color: #3b4252;
+    box-shadow: none;
+  }
+  .publication-card h3 {
+    margin: 0.1rem 0 0.4rem 0;
+    font-size: 1.12rem;
+    line-height: 1.35;
+  }
+  .publication-authors {
+    margin: 0.2rem 0 0.6rem 0;
+    font-size: 0.95rem;
+    color: #4b5563;
+  }
+  html[data-theme="dark"] .publication-authors { color: #c7ccd6; }
+  .publication-links a {
+    margin-right: 0.85rem;
+    font-weight: 600;
+    font-size: 0.92rem;
+  }
+  /* Venue badges */
+  .venue-row { margin-bottom: 0.5rem; }
+  .venue-badge {
+    display: inline-block;
+    padding: 0.16rem 0.65rem;
+    border-radius: 999px;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    background: #e7f0f4;
+    color: #2f6f8f;
+    border: 1px solid #cfe0e8;
+    margin-right: 0.4rem;
+  }
+  .venue-badge.preprint {
+    background: #eef0f2;
+    color: #5b6470;
+    border-color: #e0e3e8;
+  }
+  .venue-badge.oral {
+    background: #fbe9c7;
+    color: #8a5a00;
+    border-color: #f2d59a;
+  }
+  html[data-theme="dark"] .venue-badge {
+    background: #2b4a57;
+    color: #9ed0e6;
+    border-color: #356070;
+  }
+  html[data-theme="dark"] .venue-badge.preprint {
+    background: #3b4252;
+    color: #c0c6d0;
+    border-color: #4a525f;
+  }
+  html[data-theme="dark"] .venue-badge.oral {
+    background: #5a4416;
+    color: #f0c873;
+    border-color: #7a5d1f;
+  }
 </style>
 
 <header class="header">
@@ -255,14 +324,19 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
 <section class="section">
   <h2 class="section-title">Publications</h2>
 
-  <!-- Few-Shot Accent Synthesis for ASR -->
+  <!-- Few-Shot Synthetic Accented Speech for ASR Fine-Tuning -->
   <div class="publication-card">
     <div class="publication-content">
-      <h3>Few-Shot Accent Synthesis for ASR with LLM-Guided Phoneme Editing</h3>
+      <div class="venue-row">
+        <span class="venue-badge">ICML 2026 Workshop on ML for Audio</span>
+        <span class="venue-badge oral">Oral</span>
+      </div>
+      <h3>Few-Shot Synthetic Accented Speech for ASR Fine-Tuning: What Helps and When?</h3>
       <p class="publication-authors"><strong class="author-me">Yurii Halychanskyi</strong>, Nimet Beyza Bozdag, Mark Hasegawa-Johnson, Dilek Hakkani-Tür, Volodymyr Kindratenko.</p>
       <div class="publication-links">
         <a href="https://arxiv.org/abs/2604.27273">[Abstract]</a>
         <a href="https://arxiv.org/pdf/2604.27273">[Paper]</a>
+        <a href="https://claussss.github.io/few_shot_accent_synthesis_demo" target="_blank" rel="noopener">[Demo]</a>
       </div>
     </div>
   </div>
@@ -270,6 +344,9 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
   <!-- Accent Conversion Survey -->
   <div class="publication-card">
     <div class="publication-content">
+      <div class="venue-row">
+        <span class="venue-badge preprint">Preprint</span>
+      </div>
       <h3>Accent Conversion: A Problem-Driven Survey of Sociolinguistic and Technical Constraints</h3>
       <p class="publication-authors"><strong class="author-me">Yurii Halychanskyi</strong>, Jianfeng Steven Guo, Volodymyr Kindratenko.</p>
       <div class="publication-links">
@@ -282,9 +359,11 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
   <!-- FAC-FACodec -->
   <div class="publication-card">
     <div class="publication-content">
+      <div class="venue-row">
+        <span class="venue-badge">ICASSP 2026</span>
+      </div>
       <h3>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</h3>
       <p class="publication-authors"><strong class="author-me">Yurii Halychanskyi</strong>, Cameron Churchwell, Yutong Wen, Volodymyr Kindratenko.</p>
-      <p class="publication-venue">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2026.</p>
       <div class="publication-links">
         <a href="https://arxiv.org/abs/2510.10785">[Abstract]</a>
         <a href="https://arxiv.org/pdf/2510.10785">[Paper]</a>
@@ -295,12 +374,14 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
   <!-- Latent Diffusion Bridges for Unsupervised Musical Audio Timbre Transfer -->
   <div class="publication-card">
     <div class="publication-content">
+      <div class="venue-row">
+        <span class="venue-badge">ICASSP 2025</span>
+      </div>
       <h3>Latent diffusion bridges for unsupervised musical audio timbre transfer</h3>
       <p class="publication-authors">
         Michele Mancusi<span class="equal-contrib" title="Equal contribution">*</span>, <strong class="author-me">Yurii Halychanskyi</strong><span class="equal-contrib" title="Equal contribution">*</span>, Kin Wai Cheuk, Eloi Moliner, Chieh-Hsin Lai, Stefan Uhlich, Junghyun Koo, Marco A Martínez-Ramírez, Wei-Hsiang Liao, Giorgio Fabbro, Yuki Mitsufuji.
       </p>
       <p class="equal-contrib-note"><span class="equal-contrib">*</span> Equal contribution</p>
-      <p class="publication-venue">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2025.</p>
       <div class="publication-links">
         <a href="https://arxiv.org/abs/2409.06096">[Abstract]</a>
         <a href="https://arxiv.org/pdf/2409.06096" target="_blank" rel="noopener">[Paper]</a>
@@ -380,6 +461,10 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
   <h2 class="section-title">Presentations</h2>
   <div class="presentations-chat">
     <div class="chat-bubble">
+      Will present <strong>Few-Shot Synthetic Accented Speech for ASR Fine-Tuning: What Helps and When?</strong> (Oral) at the <a href="https://mlforaudioworkshop.github.io/" target="_blank" rel="noopener">Learning to Listen: ICML 2026 Workshop on Machine Learning for Audio</a> in Seoul, Korea.
+      <span class="chat-meta">Upcoming · July 10, 2026</span>
+    </div>
+    <div class="chat-bubble">
       Presented <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> at <strong>ICASSP 2026</strong> — session <em>SLP-P6: Neural Vocoders and Codecs</em>.
       <span class="chat-meta">Tuesday, May 5, 2026 · 14:00–16:00</span>
     </div>
@@ -388,7 +473,7 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
       <span class="chat-meta">April 23, 2026</span>
     </div>
     <div class="chat-bubble">
-      Presented <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> and <strong>Few-Shot Accent Synthesis for ASR with LLM-Guided Phoneme Editing</strong> at <a href="https://nlp.cs.illinois.edu/msld.html" target="_blank" rel="noopener">Midwest Speech and Language Days (MSLD) 2026</a>.
+      Presented <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> and <strong>Few-Shot Synthetic Accented Speech for ASR Fine-Tuning: What Helps and When?</strong> at <a href="https://nlp.cs.illinois.edu/msld.html" target="_blank" rel="noopener">Midwest Speech and Language Days (MSLD) 2026</a>.
       <span class="chat-meta">April 15, 2026</span>
     </div>
   </div>
