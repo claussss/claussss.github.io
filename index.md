@@ -367,6 +367,7 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
       <div class="publication-links">
         <a href="https://arxiv.org/abs/2510.10785">[Abstract]</a>
         <a href="https://arxiv.org/pdf/2510.10785">[Paper]</a>
+        <a href="https://claussss.github.io/accent_control_demo/" target="_blank" rel="noopener">[Demo]</a>
       </div>
     </div>
   </div>
@@ -385,6 +386,7 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
       <div class="publication-links">
         <a href="https://arxiv.org/abs/2409.06096">[Abstract]</a>
         <a href="https://arxiv.org/pdf/2409.06096" target="_blank" rel="noopener">[Paper]</a>
+        <a href="https://sony.github.io/diffusion-timbre-transfer/" target="_blank" rel="noopener">[Demo]</a>
       </div>
     </div>
   </div>
@@ -465,15 +467,15 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
       <span class="chat-meta">Upcoming · July 10, 2026</span>
     </div>
     <div class="chat-bubble">
-      Presented <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> at <strong>ICASSP 2026</strong> — session <em>SLP-P6: Neural Vocoders and Codecs</em>.
+      Presented a poster of <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> at <strong>ICASSP 2026</strong> — session <em>SLP-P6: Neural Vocoders and Codecs</em>.
       <span class="chat-meta">Tuesday, May 5, 2026 · 14:00–16:00</span>
     </div>
     <div class="chat-bubble">
-      Presented <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> at the 4th Annual NCSA Student Research Conference.
+      Presented a poster of <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> at the 4th Annual NCSA Student Research Conference.
       <span class="chat-meta">April 23, 2026</span>
     </div>
     <div class="chat-bubble">
-      Presented <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> and <strong>Few-Shot Synthetic Accented Speech for ASR Fine-Tuning: What Helps and When?</strong> at <a href="https://nlp.cs.illinois.edu/msld.html" target="_blank" rel="noopener">Midwest Speech and Language Days (MSLD) 2026</a>.
+      Presented posters of <strong>FAC-FACodec: Controllable Zero‑Shot Foreign Accent Conversion with Factorized Speech Codec</strong> and <strong>Few-Shot Synthetic Accented Speech for ASR Fine-Tuning: What Helps and When?</strong> at <a href="https://nlp.cs.illinois.edu/msld.html" target="_blank" rel="noopener">Midwest Speech and Language Days (MSLD) 2026</a>.
       <span class="chat-meta">April 15, 2026</span>
     </div>
   </div>
