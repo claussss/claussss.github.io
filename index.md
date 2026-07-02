@@ -24,9 +24,9 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
     --muted:       #3b4552;
     --accent:      #16617f;
     --accent-soft: #cfe4f0;
-    --accent-border: transparent;
-    --border:      #e6e3da;
-    --ring:        #a7b89a;
+    --accent-border: #9fc8dd;
+    --border:      #d3cdbf;
+    --ring:        #93a883;
     --shadow:      0 6px 18px rgba(30, 28, 18, 0.15);
     --shadow-sm:   0 2px 8px rgba(30, 28, 18, 0.09);
   }
@@ -225,9 +225,9 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
     border: 1px solid var(--accent-border);
     margin: 0 0.4rem 0.3rem 0;
   }
-  .venue-badge.preprint { background: #e1e5ea; color: #3a4451; border-color: transparent; }
-  .venue-badge.oral     { background: #f6d488; color: #6a4400; border-color: transparent; }
-  .venue-badge.poster   { background: #c9e6b6; color: #315318; border-color: transparent; }
+  .venue-badge.preprint { background: #e1e5ea; color: #3a4451; border-color: #bfc8d3; }
+  .venue-badge.oral     { background: #f6d488; color: #6a4400; border-color: #dcac48; }
+  .venue-badge.poster   { background: #c9e6b6; color: #315318; border-color: #9fc781; }
   html[data-theme="dark"] .venue-badge.preprint { background: #3b4252; color: #c0c6d0; border-color: #4a525f; }
   html[data-theme="dark"] .venue-badge.oral     { background: #5a4416; color: #f0c873; border-color: #7a5d1f; }
   html[data-theme="dark"] .venue-badge.poster   { background: #3a4636; color: #b7d3a3; border-color: #4a5942; }
