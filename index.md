@@ -10,113 +10,301 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
 ---
 
 <style>
-  /* Warmer page background to harmonize with portrait foliage tones */
+  /* ============================================================
+     Theme palette — one set of tokens, overridden for dark mode.
+     Everything below is built on these so light/dark stay in sync.
+     ============================================================ */
+  :root {
+    --bg:          #f3f4f1;
+    --surface:     #ffffff;
+    --surface-2:   #f4f7fb;
+    --bubble:      #ffffff;
+    --text:        #20242b;
+    --heading:     #1a1e25;
+    --muted:       #55606e;
+    --accent:      #2f6f8f;
+    --accent-soft: #e7f0f4;
+    --border:      #e6e3da;
+    --ring:        #a7b89a;
+    --shadow:      0 6px 18px rgba(60, 50, 30, 0.10);
+    --shadow-sm:   0 2px 6px rgba(60, 50, 30, 0.05);
+  }
+  html[data-theme="dark"] {
+    --bg:          #252a34;
+    --surface:     #2e3440;
+    --surface-2:   #2b303b;
+    --bubble:      #363d4a;
+    --text:        #e7ebf2;
+    --heading:     #f2f5fa;
+    --muted:       #b7c0cd;
+    --accent:      #8ec7e3;
+    --accent-soft: #2b4a57;
+    --border:      #3b4252;
+    --ring:        #46506180;
+    --shadow:      0 8px 22px rgba(0, 0, 0, 0.40);
+    --shadow-sm:   none;
+  }
+
+  /* Page background + smooth cross-fade when the theme is toggled */
   body, .page, .page__content, #main {
-    background-color: #f3f4f1 !important;
+    background-color: var(--bg) !important;
   }
-  html[data-theme="dark"] body,
-  html[data-theme="dark"] .page,
-  html[data-theme="dark"] .page__content,
-  html[data-theme="dark"] #main {
-    background-color: #252a34 !important;
+  body, .page__content, .header, .header-content h1, .header-role,
+  .publication-card, .publication-authors, .presentations-chat, .chat-bubble,
+  .chat-meta, .venue-badge, .email, .social-links a, .section-title,
+  .institution-details .location, .institution-details .degree,
+  .institution-details .date, a {
+    transition: background-color .45s ease, color .45s ease,
+                border-color .45s ease, box-shadow .45s ease;
   }
+
+  /* ---------------- Header card ---------------- */
   .header {
     display: flex;
     gap: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     padding: 2rem;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(60, 50, 30, 0.07);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
     align-items: center;
   }
-  .profile-img {
+
+  /* Profile picture: day + night stacked, cross-faded by theme.
+     Both images are pixel-aligned to the same framing, so only the
+     lighting appears to change when switching modes. */
+  .profile-frame {
+    position: relative;
     width: 300px;
     height: 300px;
+    flex-shrink: 0;
+  }
+  .profile-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center 40%;
     transform: scale(1.05);
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(60, 50, 30, 0.10);
-    border: 2px solid #a7b89a;
-    margin-bottom: 0;
+    border-radius: 14px;
+    border: 2px solid var(--ring);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+    transition: opacity .6s ease, border-color .45s ease;
   }
+  .profile-night { opacity: 0; }
+  html[data-theme="dark"] .profile-day   { opacity: 0; }
+  html[data-theme="dark"] .profile-night { opacity: 1; }
+
+  /* ---------------- Header text ---------------- */
   .header-content h1 {
-    font-size: 2.2rem;
-    margin-bottom: 0.5rem;
-    color: #222;
-    background: none;
-    -webkit-background-clip: initial;
-    -webkit-text-fill-color: initial;
+    font-size: 2.3rem;
+    margin: 0 0 0.35rem 0;
+    color: var(--heading);
     font-weight: 700;
+    letter-spacing: -0.015em;
+    background: none;
+    -webkit-text-fill-color: initial;
+  }
+  .header-role {
+    margin: 0 0 0.6rem 0;
+    color: var(--muted);
+    font-size: 1.02rem;
+    font-weight: 500;
   }
   .social-links {
     display: flex;
-    gap: 1.2rem;
-    margin-top: 0.7rem;
-    margin-bottom: 0.7rem;
+    gap: 1.1rem;
+    align-items: center;
+    margin: 0.6rem 0;
   }
   .social-links a {
-    color: #666;
+    color: var(--muted);
     text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.2s;
+    display: inline-flex;
+    transition: transform .2s ease, opacity .2s ease;
   }
-  .social-links a:hover {
-    color: #2f6f8f;
+  .social-links a:hover { transform: translateY(-3px); }
+  .social-links a img {
+    width: 30px !important;
+    height: 30px !important;
+    display: block;
+  }
+  /* Monochrome logos (GitHub, X) are near-black — lighten them in dark mode */
+  html[data-theme="dark"] .social-links a img.icon-mono {
+    filter: invert(1) brightness(1.9);
   }
   .email {
-    color: #2f6f8f;
+    color: var(--accent);
     text-decoration: none;
-    font-size: 1.1rem;
-    margin-top: 0.5rem;
+    font-size: 1.05rem;
+    margin: 0.4rem 0 0 0;
+    display: inline-block;
   }
-  @media (max-width: 768px) {
-    .header {
-      flex-direction: column;
-      padding: 1.2rem;
-    }
-    .profile-img {
-      width: 240px;
-      height: 240px;
-    }
+  .email:hover { text-decoration: underline; }
+
+  /* ---------------- Sections ---------------- */
+  .section { margin-bottom: 2.5rem; }
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--heading);
+    margin: 0 0 1.1rem 0;
+    padding-bottom: 0.45rem;
+    letter-spacing: -0.01em;
+    border-bottom: 1px solid var(--border);
+    position: relative;
   }
-  /* Hide day/night toggle if present */
-  .dark-toggle, .js-dark-toggle, .color-mode-toggle, .color-mode, .site-header .site-nav .page-link[title*="Dark"], .site-header .site-nav .page-link[title*="Night"], .site-header .site-nav .page-link[title*="Light"] {
-    display: none !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
-    height: 0 !important;
-    width: 0 !important;
-    min-width: 0 !important;
-    min-height: 0 !important;
-    max-width: 0 !important;
-    max-height: 0 !important;
-    overflow: hidden !important;
+  .section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 46px;
+    height: 2px;
+    background: var(--accent);
+    border-radius: 2px;
   }
-  /* Hide redundant name occurrences: top-nav site title link and page H1 */
-  .masthead__menu-item--lg { display: none !important; }
-  .page__title { display: none !important; }
+  .about-item p { color: var(--text); line-height: 1.6; }
+
+  /* ---------------- Publications ---------------- */
+  .publication-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.1rem 1.35rem 1.2rem;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow-sm);
+    transition: transform .2s ease, box-shadow .2s ease,
+                background-color .45s ease, border-color .45s ease;
+  }
+  .publication-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+  }
+  .publication-card h3 {
+    margin: 0.1rem 0 0.4rem 0;
+    font-size: 1.13rem;
+    line-height: 1.35;
+    color: var(--heading);
+  }
+  .publication-authors {
+    margin: 0.2rem 0 0.6rem 0;
+    font-size: 0.95rem;
+    color: var(--muted);
+  }
+  .author-me { color: var(--accent); }
+  .publication-links a {
+    margin-right: 0.85rem;
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .publication-links a:hover { text-decoration: underline; }
+
+  /* Venue badges */
+  .venue-row { margin-bottom: 0.55rem; }
+  .venue-badge {
+    display: inline-block;
+    padding: 0.16rem 0.65rem;
+    border-radius: 999px;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    background: var(--accent-soft);
+    color: var(--accent);
+    border: 1px solid transparent;
+    margin: 0 0.4rem 0.3rem 0;
+  }
+  .venue-badge.preprint { background: #eef0f2; color: #5b6470; }
+  .venue-badge.oral     { background: #fbe9c7; color: #8a5a00; }
+  .venue-badge.poster   { background: #e8efe3; color: #4f6a3f; }
+  html[data-theme="dark"] .venue-badge.preprint { background: #3b4252; color: #c0c6d0; }
+  html[data-theme="dark"] .venue-badge.oral     { background: #5a4416; color: #f0c873; }
+  html[data-theme="dark"] .venue-badge.poster   { background: #3a4636; color: #b7d3a3; }
+
+  /* ---------------- Experience & Education ---------------- */
+  .institution-logo {
+    width: 92px;
+    height: 92px;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 1.2rem;
+    background: none;
+    flex-shrink: 0;
+    display: block;
+  }
+  .education-item, .employment-item {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 0.55rem 0;
+    margin-bottom: 0.4rem;
+  }
+  .institution-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .institution-details h3 {
+    margin: 0 0 0.2rem 0;
+    line-height: 1.2;
+    color: var(--heading);
+  }
+  .institution-details .location,
+  .institution-details .degree,
+  .institution-details .date {
+    line-height: 1.35;
+    color: var(--muted);
+  }
+
+  /* ---------------- Presentations "chat" ---------------- */
+  .presentations-chat {
+    margin-top: 1rem;
+    padding: 1.2rem 1.4rem;
+    background: var(--surface-2);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    max-width: 760px;
+  }
+  .presentations-chat .chat-bubble {
+    background: var(--bubble);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.7rem;
+    box-shadow: var(--shadow-sm);
+    line-height: 1.5;
+    color: var(--text);
+  }
+  .presentations-chat .chat-bubble:last-child { margin-bottom: 0; }
+  .presentations-chat .chat-meta {
+    display: block;
+    font-size: 0.85em;
+    color: var(--muted);
+    margin-top: 0.3rem;
+  }
+
+  /* ---------------- Equal-contribution note ---------------- */
   .equal-contrib {
     font-size: 0.95em;
     font-weight: 600;
-    color: #2f6f8f;
+    color: var(--accent);
     margin-left: 2px;
     margin-right: 6px;
     vertical-align: super;
   }
-  html[data-theme="dark"] .equal-contrib {
-    color: #7eb6ff;
+  .equal-contrib-note {
+    font-size: 0.98em;
+    color: var(--muted);
+    margin: 0.2em 0 0.8em 0;
+    font-style: italic;
   }
-  html[data-theme="dark"] .equal-contrib-note {
-    color: #cfd5e0;
-  }
-  /* Slightly larger social icons */
-  .social-links a img {
-    width: 36px !important;
-    height: 36px !important;
-  }
-  /* Float theme toggle to top-right corner of viewport */
+
+  /* ---------------- Theme toggle (top-right) ---------------- */
   #theme-toggle {
     position: fixed !important;
     top: 0.8rem;
@@ -128,193 +316,77 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background: rgba(255,255,255,0.85);
-    box-shadow: 0 2px 6px rgba(60,50,30,0.12);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
     cursor: pointer;
+    transition: background-color .45s ease, border-color .45s ease,
+                transform .2s ease, box-shadow .2s ease;
   }
-  html[data-theme="dark"] #theme-toggle a {
-    background: rgba(40,46,58,0.85);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  #theme-toggle a:hover { transform: scale(1.08); box-shadow: var(--shadow); }
+  #theme-icon {
+    color: var(--accent);
+    transition: transform .5s cubic-bezier(.4, 0, .2, 1);
   }
-  /* Presentations "chat" box */
-  .presentations-chat {
-    margin-top: 1rem;
-    padding: 1.2rem 1.4rem;
-    background: #f4f7fb;
-    border-radius: 16px;
-    border: 1px solid #e3e8f0;
-    max-width: 720px;
+  html[data-theme="dark"] #theme-icon { transform: rotate(360deg); }
+
+  /* Hide redundant name occurrences: top-nav site title link and page H1 */
+  .masthead__menu-item--lg { display: none !important; }
+  .page__title { display: none !important; }
+
+  /* ---------------- Subtle entrance animations ---------------- */
+  @media (prefers-reduced-motion: no-preference) {
+    .header, .section {
+      animation: fadeUp .55s cubic-bezier(.4, 0, .2, 1) both;
+    }
+    .header    { animation-delay: .02s; }
+    .section:nth-of-type(1) { animation-delay: .10s; }
+    .section:nth-of-type(2) { animation-delay: .16s; }
+    .section:nth-of-type(3) { animation-delay: .22s; }
+    .section:nth-of-type(4) { animation-delay: .28s; }
+    .section:nth-of-type(5) { animation-delay: .34s; }
   }
-  html[data-theme="dark"] .presentations-chat {
-    background: #2e3440;
-    border-color: #3b4252;
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: none; }
   }
-  .presentations-chat .chat-bubble {
-    background: white;
-    border-radius: 14px;
-    padding: 0.8rem 1rem;
-    margin-bottom: 0.7rem;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.06);
-    line-height: 1.45;
-  }
-  html[data-theme="dark"] .presentations-chat .chat-bubble {
-    background: #3b4252;
-    color: #eceff4;
-    box-shadow: none;
-  }
-  .presentations-chat .chat-bubble:last-child { margin-bottom: 0; }
-  .presentations-chat .chat-meta {
-    display: block;
-    font-size: 0.85em;
-    color: #6b7280;
-    margin-top: 0.25rem;
-  }
-  html[data-theme="dark"] .presentations-chat .chat-meta {
-    color: #b8bfca;
-  }
-  .institution-logo {
-    width: 95px;
-    height: 95px;
-    object-fit: contain;
-    border-radius: 5px;
-    margin-right: 1.2rem;
-    margin-bottom: 0;
-    background: none;
-    flex-shrink: 0;
-    display: block;
-  }
-  .education-item, .employment-item {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-    padding: 0.5rem 0 0.5rem 0;
-    background: none;
-    border-radius: 0;
-    margin-bottom: 0.5rem;
-    box-shadow: none;
-  }
-  .institution-details {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .institution-details h3 {
-    margin: 0 0 0.25rem 0;
-    line-height: 1.2;
-  }
-  .institution-details .location,
-  .institution-details .degree,
-  .institution-details .date {
-    line-height: 1.35;
-  }
-  .equal-contrib-note {
-    font-size: 0.98em;
-    color: var(--text-normal, #444);
-    margin: 0.2em 0 0.8em 0;
-    font-style: italic;
-    transition: color 0.2s;
-  }
-  /* Publication cards */
-  .publication-card {
-    background: #ffffff;
-    border: 1px solid #e6e3da;
-    border-radius: 12px;
-    padding: 1rem 1.3rem 1.1rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 2px 6px rgba(60, 50, 30, 0.05);
-  }
-  html[data-theme="dark"] .publication-card {
-    background: #2e3440;
-    border-color: #3b4252;
-    box-shadow: none;
-  }
-  .publication-card h3 {
-    margin: 0.1rem 0 0.4rem 0;
-    font-size: 1.12rem;
-    line-height: 1.35;
-  }
-  .publication-authors {
-    margin: 0.2rem 0 0.6rem 0;
-    font-size: 0.95rem;
-    color: #4b5563;
-  }
-  html[data-theme="dark"] .publication-authors { color: #c7ccd6; }
-  .publication-links a {
-    margin-right: 0.85rem;
-    font-weight: 600;
-    font-size: 0.92rem;
-  }
-  /* Venue badges */
-  .venue-row { margin-bottom: 0.5rem; }
-  .venue-badge {
-    display: inline-block;
-    padding: 0.16rem 0.65rem;
-    border-radius: 999px;
-    font-size: 0.76rem;
-    font-weight: 700;
-    letter-spacing: 0.01em;
-    background: #e7f0f4;
-    color: #2f6f8f;
-    border: 1px solid #cfe0e8;
-    margin-right: 0.4rem;
-  }
-  .venue-badge.preprint {
-    background: #eef0f2;
-    color: #5b6470;
-    border-color: #e0e3e8;
-  }
-  .venue-badge.oral {
-    background: #fbe9c7;
-    color: #8a5a00;
-    border-color: #f2d59a;
-  }
-  .venue-badge.poster {
-    background: #e8efe3;
-    color: #4f6a3f;
-    border-color: #d3e0c8;
-  }
-  html[data-theme="dark"] .venue-badge {
-    background: #2b4a57;
-    color: #9ed0e6;
-    border-color: #356070;
-  }
-  html[data-theme="dark"] .venue-badge.preprint {
-    background: #3b4252;
-    color: #c0c6d0;
-    border-color: #4a525f;
-  }
-  html[data-theme="dark"] .venue-badge.oral {
-    background: #5a4416;
-    color: #f0c873;
-    border-color: #7a5d1f;
-  }
-  html[data-theme="dark"] .venue-badge.poster {
-    background: #3a4636;
-    color: #b7d3a3;
-    border-color: #4a5942;
+
+  /* ---------------- Responsive ---------------- */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+      padding: 1.4rem;
+    }
+    .profile-frame { width: 240px; height: 240px; }
+    .social-links { justify-content: center; }
+    .header-content h1 { font-size: 2rem; }
   }
 </style>
 
 <header class="header">
-  <img src="images/profile_new_close_fur.jpg" alt="Portrait of Yurii Halychanskyi" class="profile-img">
+  <div class="profile-frame">
+    <img src="images/profile_new_close_fur.jpg" alt="Portrait of Yurii Halychanskyi" class="profile-img profile-day">
+    <img src="images/profile_new_close_fur_night.jpg" alt="" aria-hidden="true" class="profile-img profile-night">
+  </div>
   <div class="header-content">
     <h1>Yurii Halychanskyi</h1>
+    <p class="header-role">PhD Student · UIUC — Generative Audio, Speech &amp; Accent Conversion</p>
     <div class="social-links">
       <a target="_blank" href="https://scholar.google.com/citations?user=Rcx5Jn8AAAAJ&hl=en" title="Google Scholar">
         <img src="images/Google_Scholar_logo.svg" width="28" height="28" alt="Google Scholar">
       </a>
       <a target="_blank" href="https://github.com/claussss" title="Github">
-        <img src="images/Octicons-mark-github.svg" width="28" height="28" alt="GitHub">
+        <img src="images/Octicons-mark-github.svg" width="28" height="28" alt="GitHub" class="icon-mono">
       </a>
       <a target="_blank" href="https://www.linkedin.com/in/yurii-halychanskyi-a57590169/" title="LinkedIn">
         <img src="images/LinkedIn_icon.svg" width="28" height="28" alt="LinkedIn">
       </a>
       <a target="_blank" href="https://x.com/Yurii46278911?t=hmwTabK4xqQGbvtJNva-bg&s=09" title="Twitter">
-        <img src="images/X_logo_2023_original.svg" width="28" height="28" alt="Twitter">
+        <img src="images/X_logo_2023_original.svg" width="28" height="28" alt="Twitter" class="icon-mono">
       </a>
     </div>
     <p class="email">yuriih2 [AT] illinois [DOT] edu</p>

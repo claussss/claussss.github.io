@@ -13,6 +13,15 @@
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  /* Force light mode by default; only honor an explicit user choice. OS/browser
+     dark preference is intentionally ignored so the site always opens in light. */
+  (function () {
+    try {
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    } catch (e) {}
+  })();
 </script>
 
 <!-- For all browsers -->

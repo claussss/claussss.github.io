@@ -22,12 +22,14 @@ let determineComputedTheme = () => {
 // detect OS/browser preference
 const browserPref = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 
-// Set the theme on page load or when explicitly called
+// Set the theme on page load or when explicitly called.
+// Default is always light; the OS "prefers-color-scheme" is intentionally ignored
+// so the site never opens in dark just because the visitor's device is dark.
 let setTheme = (theme) => {
-  // Force light mode as default
   const use_theme =
     theme ||
     localStorage.getItem("theme") ||
+    $("html").attr("data-theme") ||
     "light"; // Always default to light
 
   if (use_theme === "dark") {
@@ -97,12 +99,8 @@ $(document).ready(function () {
     setTheme();
   }
 
-  window.matchMedia('(prefers-color-scheme: dark)')
-        .addEventListener("change", (e) => {
-          if (!localStorage.getItem("theme")) {
-            setTheme(e.matches ? "dark" : "light");
-          }
-        });
+  // Intentionally do NOT follow the OS theme. The site stays light unless the
+  // visitor explicitly toggles to dark (persisted in localStorage).
 
   // Enable the theme toggle
   $('#theme-toggle').on('click', toggleTheme);
