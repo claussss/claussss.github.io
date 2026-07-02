@@ -364,7 +364,7 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
 <header class="header">
   <div class="profile-frame">
     <img src="images/profile_new_close_fur.jpg" alt="Portrait of Yurii Halychanskyi" class="profile-img profile-day">
-    <img src="images/profile_new_close_fur_night.jpg" alt="" aria-hidden="true" class="profile-img profile-night">
+    <img src="images/profile_night_v2.jpg" alt="" aria-hidden="true" class="profile-img profile-night">
   </div>
   <div class="header-content">
     <h1>Yurii Halychanskyi</h1>
