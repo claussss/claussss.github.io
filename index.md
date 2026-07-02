@@ -71,31 +71,47 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
     align-items: center;
   }
 
-  /* Profile picture: day + night stacked, cross-faded by theme.
-     Both images are pixel-aligned to the same framing, so only the
-     lighting appears to change when switching modes. */
+  /* Profile picture: a single portrait framed to sit well on both themes.
+     In dark mode the image is dimmed a touch so it doesn't glare and the
+     edges gently vignette into the card. */
   .profile-frame {
     position: relative;
     width: 300px;
     height: 300px;
     flex-shrink: 0;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 3px solid var(--ring);
+    box-shadow: var(--shadow);
+    transition: border-color .45s ease, box-shadow .45s ease;
   }
   .profile-img {
-    position: absolute;
-    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center 40%;
     transform: scale(1.05);
-    border-radius: 14px;
-    border: 2px solid var(--ring);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
-    transition: opacity .6s ease, border-color .45s ease;
+    display: block;
+    transition: filter .45s ease;
   }
-  .profile-night { opacity: 0; }
-  html[data-theme="dark"] .profile-day   { opacity: 0; }
-  html[data-theme="dark"] .profile-night { opacity: 1; }
+  html[data-theme="dark"] .profile-img {
+    filter: brightness(0.95) contrast(1.02);
+  }
+  .profile-frame::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    border-radius: 14px;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    transition: box-shadow .45s ease;
+  }
+  html[data-theme="dark"] .profile-frame {
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+  html[data-theme="dark"] .profile-frame::after {
+    box-shadow: inset 0 0 34px 8px rgba(0, 0, 0, 0.38);
+  }
 
   /* ---------------- Header text ---------------- */
   .header-content h1 {
@@ -363,8 +379,7 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
 
 <header class="header">
   <div class="profile-frame">
-    <img src="images/profile_new_close_fur.jpg" alt="Portrait of Yurii Halychanskyi" class="profile-img profile-day">
-    <img src="images/profile_night_v3.jpg" alt="" aria-hidden="true" class="profile-img profile-night">
+    <img src="images/profile_new_close_fur.jpg" alt="Portrait of Yurii Halychanskyi" class="profile-img">
   </div>
   <div class="header-content">
     <h1>Yurii Halychanskyi</h1>
