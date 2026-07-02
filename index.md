@@ -49,7 +49,7 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
   body, .page, .page__content, #main {
     background-color: var(--bg) !important;
   }
-  body, .page__content, .header, .header-content h1, .header-role,
+  body, .page__content, .header, .header-content h1,
   .publication-card, .publication-authors, .presentations-chat, .chat-bubble,
   .chat-meta, .venue-badge, .email, .social-links a, .section-title,
   .institution-details .location, .institution-details .degree,
@@ -106,12 +106,6 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
     letter-spacing: -0.015em;
     background: none;
     -webkit-text-fill-color: initial;
-  }
-  .header-role {
-    margin: 0 0 0.6rem 0;
-    color: var(--muted);
-    font-size: 1.02rem;
-    font-weight: 500;
   }
   .social-links {
     display: flex;
@@ -374,7 +368,6 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
   </div>
   <div class="header-content">
     <h1>Yurii Halychanskyi</h1>
-    <p class="header-role">PhD Student · UIUC — Generative Audio, Speech &amp; Accent Conversion</p>
     <div class="social-links">
       <a target="_blank" href="https://scholar.google.com/citations?user=Rcx5Jn8AAAAJ&hl=en" title="Google Scholar">
         <img src="images/Google_Scholar_logo.svg" width="28" height="28" alt="Google Scholar">
