@@ -411,6 +411,23 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
 <section class="section">
   <h2 class="section-title">Publications</h2>
 
+  <!-- SPARCLE -->
+  <div class="publication-card">
+    <div class="publication-content">
+      <div class="venue-row">
+        <span class="venue-badge preprint">Preprint</span>
+      </div>
+      <h3>SPARCLE: SPeaker-aware Aligned Representations via Contrastive Language Embeddings</h3>
+      <p class="publication-authors">
+        Priyam Mazumdar<span class="equal-contrib" title="Equal contribution">*</span>, <strong class="author-me">Yurii Halychanskyi</strong><span class="equal-contrib" title="Equal contribution">*</span>, Steven Guo, Mark Hasegawa-Johnson, Volodymyr Kindratenko.
+      </p>
+      <p class="equal-contrib-note"><span class="equal-contrib">*</span> Equal contribution</p>
+      <div class="publication-links">
+        <a href="https://arxiv.org/abs/2607.01238" target="_blank" rel="noopener">[Paper]</a>
+      </div>
+    </div>
+  </div>
+
   <!-- Few-Shot Synthetic Accented Speech for ASR Fine-Tuning -->
   <div class="publication-card">
     <div class="publication-content">
