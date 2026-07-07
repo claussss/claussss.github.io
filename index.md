@@ -423,7 +423,7 @@ keywords: ["Yurii Halychanskyi", "PhD student", "UIUC", "Generative Audio", "Spe
       </p>
       <p class="equal-contrib-note"><span class="equal-contrib">*</span> Equal contribution</p>
       <div class="publication-links">
-        <a href="https://arxiv.org/abs/2607.01238" target="_blank" rel="noopener">[Paper]</a>
+        <a href="https://arxiv.org/pdf/2607.01238" target="_blank" rel="noopener">[Paper]</a>
       </div>
     </div>
   </div>
